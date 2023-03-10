@@ -1,0 +1,74 @@
+About the course
+AIMS
+
+    Familiarize students with Python, the standard library, and selected external packages.
+    Training in finding solutions for many problems that occur in everyday scientific programming. #zadania domowe cotygodniwoe, wymagana ilośc min. 10. Praca systematyczna! Tempo jest szybkie!
+    Training in using best programming practices: writing readable code, testing programs, writing documentation.  #czytelnośc kodu, testowanie oraz pisanie dokumentacji (np. manual)
+
+DESCRIPTION
+
+This course will be online-only. I will be providing online workshop material in the form of web pages and other resources. The material is arranged into weekly sets of topics. Coursework will consist of weekly homeworks and a final project. Collaboration on homeworks and projects is not permitted.
+
+For questions about the course please contact me by my email or Teams.
+EXPECTATIONS
+
+Basic knowledge of Microsoft Windows 10 and Linux. #można się uczyc od zera :) 
+
+No prior experience with Python is required.
+
+FINAL PROJECTS
+
+A list of suggested projects subjects will be given later.
+A typical project should include computations, file management, and data visualization. #program do naszych obliczeń + pdf lub readme
+You should choose your final project in the middle of the semester.
+The final result of the project is the Python code and the short documentation (PDF, HTML, TXT, or README.md file). 
+
+
+FEATURES
+
+    Portability (mainstream operating systems are supported).
+    Code readability, easy maintenance, white spaces are significant (a more uniform style is enabled).
+    Object-oriented approach.
+    Dynamic types, high-level builtin datatypes.  #typy dynamiczne - możemy zmieniać typ w kodzie
+    Automatic memory management with garbage collection. #obiekt bez referencji jest niszczony
+    Reliable scalability. #
+    Multiple programming paradigms are supported (procedural, object-oriented, functional programming).
+    A comprehensive standard library ('batteries included'). #duża standardowa biblioteka - baterie sa załączone :)
+    A ton of useful frameworks and external libraries. 
+    Growing Python community (many tutorials, blogs).
+    Many people consider using Python a pleasure! 
+	
+APPLICATION DOMAINS
+
+    System programming (processes, administration tasks)
+    GUI programming #interfejs graficzny do programów
+    Web Development
+    Scientific programming
+    Machine Learning
+    Education (Python as the first programming language you learn)
+    Integration (mixing Python with other languages)
+    Database Management
+    Finance
+    Internet of Things
+    Startups 
+	
+	
+	
+SHORTCOMINGS #wady
+
+https://wiki.python.org/moin/GlobalInterpreterLock
+
+https://realpython.com/python-gil/
+
+Speed. But: #jezyk interpretowany a nie kompilowany!
+(a) Some parts of Python run with C speed (specialized libraries). #odliczenia numeryczne można spiąć  z językiem C/C++
+(b) Coding time is reduced, many ideas can be implemented and tested (making working prototypes).
+(c) Sometimes there are other slow components: internet connection, database response, etc.
+(d) Faster algorithms can be used.
+(e) There are tools to improve the Python performance: compilation with Cython, compilation 'just in time' with Numba, caching.
+
+Python GIL (Global Interpreter Lock).
+It is a mutex (or a lock) that protects access to Python objects, preventing multiple threads from executing Python bytecodes at once. This mutex is necessary mainly because CPython's memory management is not thread-safe [threads share the same memory].
+(a) Luckily, many potentially blocking or long-running operations, such as I/O, image processing, and NumPy number crunching, happen outside the GIL.
+(b) The most popular way to avoid GIL is to use a multiple processes instead of threads (a 'multiprocessing' module).
+(c) One can use alternative Python interpreters, not CPython. 
