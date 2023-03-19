@@ -4,6 +4,7 @@ str = "Co oxides and oxyhydroxides have been studied \n" \
 
 text_length = len(str)
 black_char_num = len(str) - str.count(" ")
+
 words_num = len(str.split())
 str_list=[]
 words_length=[]
@@ -23,3 +24,9 @@ print("the longest word is: ", longest_word, " and its length is: " , longest_wo
 str_list.sort(key=len)
 
 print("sorted list of words:  \n",str_list)
+
+## L = str.split()
+## sum(1 for char in str if not char.isspace())
+## sun(len(word) for word in L)
+
+## max(L, key=len)
