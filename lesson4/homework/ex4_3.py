@@ -3,7 +3,7 @@ def iter_even():
     while True:
         yield count
         count += 2
-
+print("iteration of even numbers:")
 for i in iter_even():
     print(i)
     if i > 9:
@@ -14,7 +14,7 @@ def iter_odd():
     while True:
         yield count
         count += 2
-
+print("iteration of odd numbers:")
 for i in iter_odd():
     print(i)
     if i > 10:
@@ -25,8 +25,9 @@ def iter_power(k):
     while True:
         yield k**i
         i+=1
-lst=[]
+
+print("iteration of powers: ")
 for i in iter_power(10):
     print(i)
-    if i > 10**10:
+    if i > 10**6:
         break

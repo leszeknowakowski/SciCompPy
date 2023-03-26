@@ -30,4 +30,3 @@ def reverse_range_iter(list, start, stop):
     return list
 
 print("iterative version of function: ",reverse_range_iter(L,3,6))
-L = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
