@@ -2,9 +2,6 @@ import os
 
 path = "D:\OneDrive - Uniwersytet Jagielloński\Studia\doktorat\\2 rok\SciCompPy\lesson5\homework"
 
-current = os.getcwd()
-
-print("\n \n")
 size=[]
 def    find_pdf_size(top):
     for root, dirs, files in os.walk(top):  # walking top-down (default)

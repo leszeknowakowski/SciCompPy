@@ -17,7 +17,7 @@ def weekdays(date1, date2):
    if date1_day > date2_day:
        print ("second date must be later than the first! ")
    else:
-      actual_day =date_convert(date1)
+      actual_day = date_convert(date1)
       print("working days from {} to {}:".format(date1, date2))
       for i in range(datedelta.days):
         if actual_day.isoweekday() == 1:

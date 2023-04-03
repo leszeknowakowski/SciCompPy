@@ -1,7 +1,7 @@
 L = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 def reverse_range(list,start,stop):
-    '''my way to conctruct function reversing a subrange of list'''
+    '''my way to construct function reversing a subrange of list'''
     new_list= list[start:stop+1]
     new_list.sort(reverse=True)
     list[start:stop+1] = new_list
